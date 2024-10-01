@@ -16,8 +16,11 @@ let currentIndex = 0;
      const videoPlayer = document.getElementById("videoPlayer");
      const videoSources = [
          "videos/v1.mp4", // Replace with your first video URL/path
-         "videos/v2.mp4", // Replace with your second video URL/path
-         "videos/v1.mp4"  // Replace with your third video URL/path
+         "videos/v3.mp4", // Replace with your second video URL/path
+         "videos/v2.mp4",  // Replace with your third video URL/path
+         "videos/v1.mp4",  // Replace with your third video URL/path
+         "videos/v3.mp4",  // Replace with your third video URL/path
+         "videos/v2.mp4"  // Replace with your third video URL/path
      ];
      
      let currentVideoIndex = 0;
