@@ -2,51 +2,24 @@
 *{
     margin: 0;
     padding: 0;
-}
-
-.ecomain {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-}
-
-.ecomainstate {
-    width: 100%;
-    max-width: 1267px;
-    margin: 0 auto;
-}
-
-.ehcomainstateplus {
-    width: 100%;
-    float: left;
+    user-select: none;
 }
 
 body{
     font-family: Kanit;
+    width: 1300px; 
+    margin: 0 auto;
 }
 
 nav{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 60px;
-    background-color: #15B392;
-}
-
-nav ul{
-    color: black;
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-}
-nav ul li {
-    color: black;
-    background-color: #29cfab;
-    margin-left: 30px;
-    padding: 5px;
-    position: relative;
-    left: 350px;
-    border-radius: 10px;
-    overflow: hidden;
+    height: 100px;
+    text-align: center;
+    background: linear-gradient(to right,#29caa7,#29caa7);
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li::before {
@@ -54,7 +27,7 @@ nav ul li::before {
     position: absolute;
     top: 0;
     left: 100%;
-    width: 200%;
+    width: 100%;
     height: 100%;
     background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
     transform: skewX(-20deg);
@@ -121,8 +94,8 @@ nav h1{
     color:black;
     cursor: pointer;
     position: relative;
-    left: 50px;
     font-weight: 600;
+    font-size: 50px;
 }
 
 nav h1:hover{
@@ -144,14 +117,17 @@ nav p:hover{
     75%{color: #48CFCB;}
     100%{color: #229799;}
 }
+.headings{
+    text-align: center;
+}
 
 .headings p{
     color:black;
     cursor: pointer;
     position: relative;
-    top: -10px;
-    left: 49px;
     font-weight: 400;
+    font-size: 20px;
+    top: -10px;
 }
 
 footer{
@@ -170,6 +146,7 @@ footer{
     text-align: center;
     color: white;
     margin: 0 auto;
+    align-items: center;
 }
 
 main{
@@ -177,9 +154,14 @@ main{
 }
 
 .video-container {
+    
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+
+    position:relative;
+    left: -55px;
+    top: 2px;
 }
 
 #videoList {
@@ -214,22 +196,17 @@ main{
 
 .slides {
     display: flex;
-    transition: transform 1s ease-in-out;
-    width: 1200px; /* Assuming three slides */
+    transition: transform 1s ease-in-out; /* Assuming three slides */
     height: 800px;
 }
 
 .slide {
-    width: 1200px;
-    height: 600px;
-    height: 500px; /* Each slide should occupy the full width */
     flex-shrink: 0;
 }
 
 .slide img {
-    width: 1200px;
+    width: 1170px;
     height: 600px;
-    height: auto;
 }
 
 /* Add styles for smooth transitions */
@@ -245,4 +222,128 @@ main{
     height: 2px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+
+.contents {
+    position:relative; /* Allows positioning over the video */
+    color: white; /* Text color for visibility */
+    text-align: center; /* Center the content */
+    z-index: 1; /* Ensures content appears above the video */
+
+}
+
+.headc{
+    position: relative;
+    top: 60px;
+    color: #15B392;
+}
+.headc i{
+    position: relative;
+    color: #15B392;
+    margin-right: 20px;
+}
+.headctwo{
+    position: relative;
+    top: 110px;
+    color: #15B392;
+}
+.headctwo i{
+    position: relative;
+    color: #15B392;
+    margin-right: 20px;
+}
+.headcthree{
+    position: relative;
+    top: 160px;
+    color: #15B392;
+}
+.headcthree i{
+    position: relative;
+    padding: 5px;
+    margin-right: 20px;
+    color: #15B392;
+}
+.headcfour{
+    position: relative;
+    top: 220px;
+    color: #15B392;
+}
+.headcfour i{
+    position: relative;
+    padding: 5px;
+    margin-right: 20px;
+    color: #15B392;
+}
+
+.contents a{
+    position: relative;
+    top: 300px;
+    background-color:#15B392 ;
+    margin: 0 auto;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20px;
+    transform: translateX(20px);
+}
+
+.dona:hover{
+    background-color: #229799;
+    color: white;
+    transform: translateX(20px);
+    
+}
+.netoneto a{
+    position: relative;
+    background-color:#15B392 ;
+    margin: 0 auto;
+    color: black;
+    margin-left: 30px;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20px;
+    transform: translateX(20px);
+}
+
+.dona:hover{
+    background-color: #229799;
+    color: white;
+    transform: translateX(20px);
+    
+}
+
+.background-video {
+    position:relative; /* Keeps the video fixed while scrolling */
+    z-index: -1; /* Places the video behind other content */
+    margin: 0 auto;
+    top: -200px; 
+}
+
+.seterment{
+    background: linear-gradient(to right,#29caa7,#17f0c1,#29caa7);
+}
+.seterment ul{
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+}
+.seterment ul li{
+    margin: 10px auto;
+}
+.seterment ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: #17f0c1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.seterment ul li a:hover{
+    color: white;
+    background-color: #229799;
+}
+
+.reeed{
+    background-color: #29caa7;
 }
