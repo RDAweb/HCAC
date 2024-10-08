@@ -5,9 +5,28 @@
     user-select: none;
 }
 
+.ecomain{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.ecomainstate{
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.ehcomainstateplus{
+    width: 100%;
+    float: center;
+    margin: 0 auto;
+}
+
 body{
     font-family: Kanit;
-    width: 1300px; 
     margin: 0 auto;
 }
 
@@ -230,12 +249,11 @@ main{
     color: white; /* Text color for visibility */
     text-align: center; /* Center the content */
     z-index: 1; /* Ensures content appears above the video */
-
 }
 
 .headc{
     position: relative;
-    top: 60px;
+    top: 110px;
     color: #15B392;
 }
 .headc i{
@@ -245,7 +263,7 @@ main{
 }
 .headctwo{
     position: relative;
-    top: 110px;
+    top: 130px;
     color: #15B392;
 }
 .headctwo i{
@@ -292,7 +310,6 @@ main{
     background-color: #229799;
     color: white;
     transform: translateX(20px);
-    
 }
 .netoneto a{
     position: relative;
@@ -304,6 +321,7 @@ main{
     padding: 20px;
     border-radius: 20px;
     transform: translateX(20px);
+    z-index: 1;
 }
 
 .dona:hover{
@@ -311,6 +329,13 @@ main{
     color: white;
     transform: translateX(20px);
     
+}
+.headcfourgg{
+    position: relative;
+    top: -150px;
+    color: #000000;
+    text-decoration: underline darkgoldenrod 2px;
+    background-color: #00cbdd41;
 }
 
 .background-video {
@@ -329,7 +354,7 @@ main{
     margin: 0 auto;
 }
 .seterment ul li{
-    margin: 20px auto;
+    margin: 10px auto;
 }
 .seterment ul li a{
     text-decoration: none;
@@ -346,4 +371,118 @@ main{
 
 .reeed{
     background-color: #29caa7;
+}
+
+table {
+    border: 2px solid black;
+    margin: 80px;
+}
+table tr td{
+    padding: 50px;
+    padding-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+.hellohead{
+    width: 90%;
+    text-align: center;
+    margin: 50px;
+}
+
+table tr td Button{
+    text-decoration: none;
+    color: black;
+    background-color: #17f0c1;
+    padding: 30px;
+    width: 280px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+table tr td Button:hover{
+    color: white;
+    background-color: #229799;
+}
+
+.profiles {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Set the width of the container */
+}
+
+.profile-cont{
+    display: flex;
+    transition: transform 0.3s ease; /* Smooth transition */
+    text-align: center;
+}
+.profile-card{
+    padding: 30px;
+    min-width: 550px; /* Set width of individual cards */
+    min-height: 340px;
+    margin: 0 10px; /* Space between cards */
+    border: 2px solid #000000 ;
+    background: linear-gradient(to right,#29caa7,#17f0c1,#29caa7);
+}
+.profile-card img {
+    width: 100%; /* Make images responsive */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.profiles button {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background:#bbb;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 30px; /* Positioning for previous button */
+}
+
+.next {
+    right: 30px; /* Positioning for next button */
+}
+
+.donaimg{
+    position: relative;
+    background-color:#15B392 ;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    margin: 6px;
+    border-radius: 20px;
+    transform: translateX(20px);
+}
+
+.donaimg:hover{
+    background-color: #229799;
+    color: white;
+    transform: translateX(20px);
+}
+.donaimgdonateb{
+    position: relative;
+    background-color:#15B392 ;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    margin: 6px;
+    border-radius: 20px;
+}
+
+.donaimgdonateb:hover{
+    background-color: #229799;
+    color: white;
+    transform: translateX(20px);
+}
+.unverified{
+    color: red;
 }
