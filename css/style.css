@@ -171,6 +171,9 @@ footer{
 main{
     background-color: rgb(207, 207, 207);
 }
+.maintoook{
+    border: 3px solid black;
+}
 
 .video-container {
     
@@ -273,7 +276,7 @@ main{
 }
 .headcthree{
     position: relative;
-    top: 160px;
+    top: 175px;
     color: #15B392;
 }
 .headcthree i{
@@ -323,7 +326,32 @@ main{
     transform: translateX(20px);
     z-index: 1;
 }
+.netonetoshare a{
+    position: relative;
+    background-color:#15B392 ;
+    margin: 0 auto;
+    color: black;
+    margin-left: 45px;
+    text-decoration: none;
+    padding: 20px;
+    top: 40px;
+    border-radius: 20px;
+    transform: translateX(20px);
+    z-index: 1;
+}
+.liness{
+    width: 100%;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #000000;
+}
 
+.donashare:hover{
+    background-color: #229799;
+    color: white;
+    transform: translateX(20px);
+    
+}
 .dona:hover{
     background-color: #229799;
     color: white;
@@ -332,10 +360,14 @@ main{
 }
 .headcfourgg{
     position: relative;
+    width: 80%;
+    margin: 0 auto;
     top: -150px;
     color: #000000;
-    text-decoration: underline darkgoldenrod 2px;
     background-color: #00cbdd41;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px 30px
 }
 
 .background-video {
@@ -390,7 +422,7 @@ table tr td{
     margin: 50px;
 }
 
-table tr td Button{
+table tr td a{
     text-decoration: none;
     color: black;
     background-color: #17f0c1;
@@ -399,9 +431,10 @@ table tr td Button{
     font-weight: 600;
     font-size: 20px;
     border-radius: 10px;
+    border: 2px solid black;
 }
 
-table tr td Button:hover{
+table tr td a:hover{
     color: white;
     background-color: #229799;
 }
@@ -485,4 +518,20 @@ table tr td Button:hover{
 }
 .unverified{
     color: red;
+}
+#Activeness{
+    background-color: #229799;
+    color: white;
+}
+.hamazon{
+color: black; 
+background-color:#f01734; 
+width: 30%; 
+margin: 0 auto; 
+border-radius: 10px; 
+border: 3px solid black;
+}
+.hamazon:hover{
+    background-color: #229799;
+    color: white;
 }
