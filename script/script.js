@@ -66,3 +66,26 @@ nextBtn.addEventListener('click', () => {
     }
     updateSlider();
 });
+        // Function to check if an element is in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top < window.innerHeight && rect.bottom >= 0
+            );
+        }
+    
+        // Function to add the 'visible' class when an element is in view
+        function handleScroll() {
+            const sections = document.querySelectorAll('table');
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+    
+        // Initial check to see if sections are visible
+        document.addEventListener('DOMContentLoaded', handleScroll);
+    
+        // Add event listener to check when the user scrolls
+        window.addEventListener('scroll', handleScroll);

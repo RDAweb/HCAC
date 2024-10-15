@@ -119,22 +119,22 @@ nav h1{
 
 nav h1:hover{
     color: red;
-    transform: translatex(5px);
-    animation: changecolor 2s infinite;
+    animation: changecolor 1s infinite;
     z-index: 2;
+    transform: translatex(1px);
 }
 nav p:hover{
     color: red;
-    animation: changecolor 2s infinite;
-    transform: translatex(5px);
+    animation: changecolor 1s infinite;
+    transform: translatex(1px);
 }
 
 @keyframes changecolor {
-    0%{color: #00CCDD;}
-    25%{color: #7CF5FF;}
-    50%{color: #6CBEC7;}
-    75%{color: #48CFCB;}
-    100%{color: #229799;}
+    0%{color: red;}
+    40%{color: red;}
+    60%{color: blue;}
+    70%{color: blue;}
+    100%{color: red;}
 }
 .headings{
     text-align: center;
@@ -408,6 +408,15 @@ main{
 table {
     border: 2px solid black;
     margin: 80px;
+    margin-bottom: 40px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Slightly moved down */
+    transition: all 0.6s ease-out;
+}
+/* The class to be added when the section is visible */
+table.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 table tr td{
     padding: 50px;
@@ -522,16 +531,84 @@ table tr td a:hover{
 #Activeness{
     background-color: #229799;
     color: white;
+    border: 3px solid black;
 }
 .hamazon{
 color: black; 
-background-color:#f01734; 
+background-color:#79e779; 
 width: 30%; 
 margin: 0 auto; 
 border-radius: 10px; 
 border: 3px solid black;
 }
 .hamazon:hover{
+    background-color:#4ab34a; 
+    color: white;
+}
+.weblinkshere{
+    width: 20px;
+    height: 20px;
+}
+.displysexercise{
+    display: flex;
+}
+.howtodow{
+    position: relative;
+    text-align: left;
+}
+.onlyforwidthset{
+    min-width: 1150px;
+}
+.otherimage{
+    position: relative;
+    left: 100px;
+}
+.push-up-image{
+    position: relative;
+    left: 150px;
+}
+.planksimage{
+    position: relative;
+    left: 210px;
+}
+.lungesimage{
+    position: relative;
+    left: 10px;
+}
+.bicycleimage{
+    position: relative;
+    left: -50px;
+}
+.jumpingjackimage{
+    position: relative;
+    left: 210px;
+}
+.burpeeimage{
+    position: relative;
+    left: 160px;
+}
+.jumpingropeimage{
+    position: relative;
+    left: 220px;
+}
+.legimage{
+    position: relative;
+    left: 270px;
+}
+#translation-btn{
+    position: relative;
+    background-color:#153ab3 ;
+    left: 310px;
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20px;
+    transform: translateX(20px);
+}
+
+#translation-btn:hover{
     background-color: #229799;
     color: white;
+    transform: translateX(20px);
 }

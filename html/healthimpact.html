@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=1.0,">
+    <title>HCAC (Health Impact)</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/6a371b25d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="ecomain">
+        <div class="ecomainstate">
+            <div class="ehcomainstateplus">
+    <nav>
+        <div class="headings">
+        <a href="../index.html" style="text-decoration: none;"><h1>HCAC</h1></a>
+        <a href="../index.html" style="text-decoration: none;"><p>Health Care And Charity </p></a>
+    </div>
+    </nav>
+    <div class="seterment" style="text-align: center;" >
+        <h1 class="hamazon">Health Impact</h1>
+    <ul>
+        <li><a href="">Student&nbsp;Help</a></li>
+        <li><a href="">Contact&nbsp;US</a></li>
+        <li><a class="reeed" href="../index.html">Home</a></li>
+        <li><a href="">Donate&nbsp;Now</a></li>
+        <li><a href="">About&nbsp;US</a></li>
+    </ul>
+</div>
+<div class="liness"></div>
+<main class="maintoook">
+    <div class="netonetoshare">
+        <a class="donashare" href="sharetofriends.html">Tell Your Friends</a>
+        <a class="donashare" id="Activeness" href="healthimpact.html">Health Impact</a>
+        <a class="donashare" href="findhealthresorces.html">Find Health Resources</a>
+        <a class="donashare" href="Healthcare.html">Healthcare</a>
+        <a class="donashare" href="junkfoodimpactonhealth.html">Junk Food Impact on Health</a>
+        <a class="donashare" href="exercise.html">Exercise</a>
+    </div>
+    <table>
+        <tr>
+            <td>
+            <div class="container">
+                <h1 style="color: #f01734;"  >Health Impact</h1>
+                <p style="font-size: 30px;" ><strong>HCAC<p style="font-size: 15px;" >Health Care And Chairty</p></strong>we believe that access to healthcare and support services is essential for improving quality of life. Our mission is to address health challenges in underserved communities through targeted initiatives.</p>
+        
+                <!-- Programs and Initiatives -->
+                <br><br><div class="section">
+                    <h2>Programs and Initiatives</h2>
+                    <p>We are dedicated to improving health in the communities we serve through a range of programs, including:</p>
+                    <ul>
+                        <h3><strong>Healthcare Access:</strong> </h3><p>Providing medical services, mobile clinics, and telemedicine to reach those who need it most.</p> 
+                        <h3><strong>Mental Health Support:</strong></h3><p>Offering counseling services, mental health awareness, and support programs for individuals and families.</p> 
+                        <h3><strong>Nutrition and Wellness:</strong></h3><p> Promoting healthy living through nutrition education, food distribution, and wellness programs.</p> 
+                        <h3><strong>Clean Water and Sanitation:</strong></h3><p> Ensuring access to clean drinking water and proper sanitation to prevent diseases and promote health.</p>
+                    </ul>
+                </div>
+        
+                <!-- Health Statistics and Impact -->
+                <br><br><br><div class="section">
+                    <h2>Health Statistics and Impact</h2>
+                    <p>Our health programs have made a tangible impact in the lives of those we serve:</p>
+                    <ul>
+                        <p><strong><b>500+ individuals</b></strong> have received medical attention through our mobile clinics, improving access to healthcare in remote areas.</p>
+                        <p>Our clean water initiative has reduced waterborne illnesses by <strong><b>40%</b></strong> in the regions we operate.</p>
+                        <p>Child malnutrition rates have decreased by <strong><b>15%</b></strong>, leading to better school attendance and overall health.</p>
+                    </ul>
+                </div>
+        
+                <!-- Partnerships -->
+                <br><br><div class="section">
+                    <h2>Partnerships</h2>
+                    <p>We collaborate with local hospitals, health organizations, and government bodies to amplify our reach and impact, ensuring that we can provide quality care to those who need it most.</p>
+                </div>
+        
+                <!-- Long-Term Health Goals -->
+                <br><br><div class="section">
+                    <h2>Long-Term Health Goals</h2>
+                    <p>Our long-term vision is to establish permanent community health centers across all the regions we serve, ensuring ongoing access to healthcare for future generations. We are committed to expanding our efforts to reach more people in need.</p>
+                </div>
+        
+                <!-- How Donations Help -->
+                <br><br><div class="section">
+                    <h2>How Donations Help</h2>
+                    <p>Your donations are critical to the success of our health programs. Each contribution helps us fund essential health services such as vaccinations, emergency surgeries, and mental health support. With your help, we can continue to save lives and build healthier communities.</p>
+                </div>
+        
+                <!-- Call to Action -->
+                <br><br><div class="section">
+                    <h3>Make a Difference Today</h3>
+                    <p>Your support can make a lasting impact on the health of underserved communities. Donate today to help us provide life-saving care and health services.</p>
+                    <br><br><a style="padding: 15px;" href="donate.html" class="cta">Donate Now</a>
+                </div>
+            </div>
+        </td>
+        </tr>
+    </table>
+</main>
+<footer>
+    <div class="infob">
+        <p>&copy;</p>
+        <p>Supportandhelp123@gmail.com</p>
+    </div>
+</footer>
+<script>
+    // Function to check if an element is in the viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top < window.innerHeight && rect.bottom >= 0
+        );
+    }
+
+    // Function to add the 'visible' class when an element is in view
+    function handleScroll() {
+        const sections = document.querySelectorAll('table');
+        sections.forEach(section => {
+            if (isInViewport(section)) {
+                section.classList.add('visible');
+            }
+        });
+    }
+
+    // Initial check to see if sections are visible
+    document.addEventListener('DOMContentLoaded', handleScroll);
+
+    // Add event listener to check when the user scrolls
+    window.addEventListener('scroll', handleScroll);
+</script>
+<script src="../script/script.js"></script>
+</div>
+</div>
+</div>
+</body>
+</html>
