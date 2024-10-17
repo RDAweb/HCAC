@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=1.0,">
+    <title>HCAC (Health Quiz)</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/6a371b25d2.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logoc.png" type="icon/png">
+</head>
+<body>
+    <div class="ecomain">
+        <div class="ecomainstate">
+            <div class="ehcomainstateplus">
+    <nav>
+        <div id="google_translate_element"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <div class="headings">
+        <div class="headings">
+        <a href="../index.html" style="text-decoration: none;"><h1>HCAC</h1></a>
+        <a href="../index.html" style="text-decoration: none;"><p>Health Care And Charity</p> </a>
+    </div>
+    </nav>
+    <div class="seterment" style="text-align: center;" >
+        <h1 style="font-size: 30px; padding: 10px; " class="hamazon">Health Quiz</h1>
+    <ul>
+        <li><a href="">Student&nbsp;Help</a></li>
+        <li><a href="">Contact&nbsp;US</a></li>
+        <li><a class="reeed" href="../index.html">Home</a></li>
+        <li><a href="">Donate&nbsp;Now</a></li>
+        <li><a href="">About&nbsp;US</a></li>
+    </ul>
+</div>
+<div class="liness"></div>
+<main style="min-height: 900px;" class="maintoook">
+    <div class="netonetoshare">
+        <a class="donashare" href="sharetofriends.html">Tell Your Friends</a>
+        <a class="donashare" href="healthimpact.html">Health Impact</a>
+        <a class="donashare" href="findhealthresorces.html">Find Health Resources</a>
+        <a class="donashare" href="Healthcare.html">Healthcare</a>
+        <a class="donashare" href="junkfoodimpactonhealth.html">Junk Food Impact on Health</a>
+        <a class="donashare" href="exercise.html">Exercise</a>
+        <a class="donashare" id="Activeness" href="healthquiz.html">Health Quiz</a>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><section class="health-quiz">
+        <h2>Take Our Health Quiz</h2>
+        <button id="start-quiz">Start Quiz</button>
+        <div id="quiz-container" style="display: none;">
+            <h3 id="quiz-question"></h3>
+            <div id="quiz-options"></div>
+            <button id="next-btn" style="display: none;">Next</button>
+            <h3 id="quiz-result" style="display: none;"></h3>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="infob">
+        <p>&copy;</p>
+        <p>Supportandhelp123@gmail.com</p>
+    </div>
+</footer>
+<script>
+    const quizData = [
+    { 
+        question: "How often do you exercise?", 
+        options: [
+            { text: "Never", score: 0 },
+            { text: "1-2 times a week", score: 1 },
+            { text: "3-4 times a week", score: 2 },
+            { text: "5 or more times a week", score: 3 }
+        ] 
+    },
+    { 
+        question: "Do you follow a balanced diet?", 
+        options: [
+            { text: "Yes", score: 2 },
+            { text: "No", score: 0 }
+        ] 
+    },
+    { 
+        question: "How many hours of sleep do you get on average?", 
+        options: [
+            { text: "Less than 5 hours", score: 0 },
+            { text: "5-6 hours", score: 1 },
+            { text: "7-8 hours", score: 2 },
+            { text: "More than 8 hours", score: 1 }
+        ] 
+    },
+    { 
+        question: "How often do you drink water?", 
+        options: [
+            { text: "Rarely", score: 0 },
+            { text: "2-3 glasses a day", score: 1 },
+            { text: "4-6 glasses a day", score: 2 },
+            { text: "7-8 glasses a day", score: 3 }
+        ] 
+    },
+    { 
+        question: "How do you manage stress?", 
+        options: [
+            { text: "I don’t", score: 0 },
+            { text: "I try to relax sometimes", score: 1 },
+            { text: "I meditate or exercise regularly", score: 3 },
+            { text: "I take frequent breaks", score: 2 }
+        ] 
+    }
+    // Add more questions as needed
+];
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+document.getElementById('start-quiz').addEventListener('click', function() {
+    this.style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    loadQuestion();
+});
+
+function loadQuestion() {
+    const currentQuestion = quizData[currentQuestionIndex];
+    document.getElementById('quiz-question').innerText = currentQuestion.question;
+    const optionsContainer = document.getElementById('quiz-options');
+    optionsContainer.innerHTML = '';
+    currentQuestion.options.forEach((option, index) => {
+        const button = document.createElement('button');
+        button.innerText = option.text;
+        button.addEventListener('click', () => selectOption(option.score));
+        optionsContainer.appendChild(button);
+    });
+}
+
+function selectOption(optionScore) {
+    score += optionScore;
+    document.getElementById('next-btn').style.display = 'block';
+}
+
+document.getElementById('next-btn').addEventListener('click', function() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < quizData.length) {
+        this.style.display = 'none';
+        loadQuestion();
+    } else {
+        showResult();
+    }
+});
+
+function showResult() {
+    document.getElementById('quiz-question').style.display = 'none';
+    document.getElementById('quiz-options').style.display = 'none';
+    document.getElementById('next-btn').style.display = 'none';
+    
+    let resultText = '';
+    if (score >= 10) {
+        resultText = "Great job! You're on a healthy path!";
+    } else if (score >= 5) {
+        resultText = "You're doing okay, but there's room for improvement!";
+    } else {
+        resultText = "It might be time to focus more on your health!";
+    }
+    
+    document.getElementById('quiz-result').innerText = resultText;
+    document.getElementById('quiz-result').style.display = 'block';
+}
+
+
+    // Function to check if an element is in the viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top < window.innerHeight && rect.bottom >= 0
+        );
+    }
+
+    // Function to add the 'visible' class when an element is in view
+    function handleScroll() {
+        const sections = document.querySelectorAll('table');
+        sections.forEach(section => {
+            if (isInViewport(section)) {
+                section.classList.add('visible');
+            }
+        });
+    }
+
+    // Initial check to see if sections are visible
+    document.addEventListener('DOMContentLoaded', handleScroll);
+
+    // Add event listener to check when the user scrolls
+    window.addEventListener('scroll', handleScroll);
+</script>
+<script src="../script/script.js"></script>
+</div>
+</div>
+</div>
+</body>
+</html>
